@@ -1,0 +1,36 @@
+.mieidiv {
+    margin-left: 10px; 
+}
+
+body{
+    margin: 15px;
+}
+
+.box{
+    border: 1px solid black;
+    margin-top: 15px;
+    padding: 5%;
+}
+
+#div1{
+    margin-top: 15px;
+}
+
+.nominativi{
+    font-style: italic;
+    border: 1px solid black;
+    padding: 5px;
+    text-transform: capitalize;
+}
+
+#txtNome{
+    margin-left: 26px;
+}
+
+#txtCognome,#btnInserisci{
+    margin-top: 10px;
+}
+
+#txtNome,#txtCognome{
+    text-transform: capitalize;
+}

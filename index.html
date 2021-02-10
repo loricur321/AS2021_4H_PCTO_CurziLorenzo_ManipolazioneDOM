@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Manipolazione DOM</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="js/mieiscript.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/mieistli.css">
+  </head>
+  <body>
+
+    <div class="container-fluid mieidiv">
+        <div class="row">
+            <div class="col-sm">
+                <button type="button" class="btn btn-outline-info">HOME</button>
+            </div>
+
+            <div class="col-sm">
+                <button type="button" class="btn btn-outline-info">CHI SIAMO</button>
+            </div>
+
+            <div class="col-sm">
+                <button type="button" class="btn btn-outline-info">MISSION</button>
+            </div>
+
+            <div class="col-sm">
+                <button type="button" class="btn btn-outline-info">PORTFOLIO</button>
+            </div>
+
+            <div class="col-sm">
+                <button type="button" class="btn btn-outline-info">CONTATTI</button>
+            </div>
+        </div>
+    </div> 
+
+    <div class="row container-fluid mieidiv">
+        <div class="col-10">
+            <div class="row">
+                <div class="col-5 box">
+                    1
+                </div>
+
+                <div class="col-5 offset-md-1 box">
+                    2
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-3 box">
+                    3
+                </div>
+
+                <div class="col-3 box offset-md-1">
+                    4
+                </div>
+
+                <div class="col-3 box offset-md-1">
+                    5
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-11 box">
+                    <form action="" method="POST">
+                        <div id="nome">
+                            Nome 
+                            <input type="text" id="txtNome">
+                        </div>
+                        <div id="cognome">
+                          Cognome 
+                          <input type="text" id="txtCognome">
+                          <input type="button" value="INSERISCI" id="btnInserisci">
+                        </div>
+                      </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-2 box" id="nominativi">
+            NOMINATIVI
+        </div>
+    </div>
+
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" hidden id="triggerModal" data-toggle="modal" data-target="#staticModal">
+      Launch static backdrop modal
+    </button>
+
+    <!-- Bootstrap modal -->
+    <div class="modal" tabindex="-1" id="staticModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="Title">Modal title</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p id="paragraph">...</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal" id="btnSecond">Close</button>
+              <button type="button" class="btn btn-primary" id="btnFirst" data-dismiss="modal">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+  </body>
+</html>
