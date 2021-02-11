@@ -8,7 +8,6 @@ jQuery(function() {
        var nome = jQuery("#txtNome").val();
        var cognome = jQuery("#txtCognome").val();
        cognomeNome = nome + " " + cognome;
-       //alert(cognomeNome);
        if(i >= 1)
        {
             for(var j = 0; j < i; j++)

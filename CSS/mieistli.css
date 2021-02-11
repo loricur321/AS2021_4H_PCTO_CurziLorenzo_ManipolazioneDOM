@@ -1,13 +1,9 @@
-.mieidiv {
-    margin-left: 10px; 
-}
-
 body{
     margin: 15px;
 }
 
 .box{
-    border: 1px solid black;
+    border: 2px solid black;
     margin-top: 15px;
     padding: 5%;
 }
@@ -18,7 +14,7 @@ body{
 
 .nominativi{
     font-style: italic;
-    border: 1px solid black;
+    border: 2px solid black;
     padding: 5px;
     text-transform: capitalize;
 }
