@@ -14,35 +14,70 @@
   </head>
   <body>
 
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Miosito.it</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">CHI SIAMO</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">MISSION</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">PORTFOLIO</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">CONTATTI</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+    <!-- Navbar is for both computer and smartphone -->
 
-    <div class="row container-fluid">
+      <div class="container-fluid">
+          <div class="col">
+            <nav class="navbar navbar-expand-lg navbar-light">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">CHI SIAMO</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">MISSION</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">PORTFOLIO</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">CONTATTI</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+      </div>
+
+      <!-- Smartphone version -->
+
+    <div class="row container-fluid" id="littleScreen">
+      <div class="col">
+        <div class="row col-9 box">
+          1 
+        </div>
+
+        <div class="row col-9 box">
+          2
+        </div>
+
+        <div class="row col-9 box">
+          3
+        </div>
+
+        <div class="row col-9 box">
+          4
+        </div>
+
+        <div class="row col-9 box">
+          5
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Computer version -->
+
+    <div class="row container-fluid" >
         <div class="col-10">
+          <div id="bigScreen"> 
             <div class="row">
                 <div class="col-5 box">
                     1
@@ -66,29 +101,45 @@
                     5
                 </div>
             </div>
+          </div>
 
             <div class="row">
                 <div class="col-11 box">
-                    <form action="" method="POST">
-                        <div id="nome">
-                            Nome 
-                            <input type="text" id="txtNome">
-                        </div>
-                        <div id="cognome">
-                          Cognome 
-                          <input type="text" id="txtCognome">
-                          <input type="button" value="INSERISCI" id="btnInserisci">
+                      <form>
+                        <div class="conteiner-fluid">
+                          <div class="row">
+                            <div class="col-2">
+                              <label id="nome">Nome</label>
+                            </div>  
+                            <div class="col-7">
+                              <input type="text" class="form-control" id="txtNome" aria-describedby="emailHelp">
+                            </div>
+                          </div>
+
+                          <div class="row">
+                            <div class="col-2">
+                              <label id="cognome">Cognome</label>
+                            </div>
+
+                            <div class="col-7">
+                              <input type="text" class="form-control" id="txtCognome">
+                            </div>
+
+                            <div class="col">
+                              <button type="button" class="btn btn-outline-success" id="btnInserisci">INSERISCI</button>
+                            </div>
+                          </div>
+                        
                         </div>
                       </form>
                 </div>
             </div>
         </div>
-
         <div class="col box" id="nominativi">
           <h5 class="media-heading">NOMINATIVI</h5>
         </div>
-    </div>
-
+    </div> 
+   
     <!-- Button trigger modal -->
     <button type="button" class="btn btn-primary" hidden id="triggerModal" data-toggle="modal" data-target="#staticModal">
       Launch static backdrop modal
@@ -108,8 +159,8 @@
               <p id="paragraph">...</p>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal" id="btnSecond">Close</button>
-              <button type="button" class="btn btn-primary" id="btnFirst" data-dismiss="modal">Save changes</button>
+              <button type="button" class="btn btn-dark" data-dismiss="modal" id="btnSecond">Close</button>
+              <button type="button" class="btn btn-success" id="btnFirst" data-dismiss="modal">Save changes</button>
             </div>
           </div>
         </div>
